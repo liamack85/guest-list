@@ -1,4 +1,6 @@
 import { useState } from "react";
+import GuestDetails from "./GuestDetails";
+import GuestList from "./GuestList";
 
 export default function App() {
   const [guestId, setGuestId] = useState(null);
@@ -9,7 +11,6 @@ export default function App() {
       ) : (
         <GuestList setGuestId={setGuestId} />
       )}
-      ;
     </main>
   );
 }
